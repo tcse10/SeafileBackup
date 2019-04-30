@@ -1,0 +1,30 @@
+
+#MySQL Connection
+mysqlhost="localhost"
+username="seafile"
+password="xxx"
+
+#data path
+dbbackupdir="/media/data/dbbackup"
+datadir="/media/data"
+
+#Tapedrive to use
+tapedrive="/dev/st0"
+
+#Logging
+LOGBASE=/var/log/seafilebackup
+LOGFIILE=$LOGBASE/`date +"%Y-%m-%d-%H-%M-%S"`.backup.log
+
+#Encryption
+recipient=your@public.key
+
+# Path to binaries
+TAR=/bin/tar
+MT=/bin/mt
+MKDIR=/bin/mkdir
+MYSQLDUMP=/usr/bin/mysqldump
+TAR=/usr/bin/tar
+GPG=/usr/bin/gpg
+MBUFFER=/usr/bin/mbuffer
+
+TAR_ARGS=""
